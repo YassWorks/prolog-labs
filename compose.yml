@@ -1,0 +1,10 @@
+services:
+  prolog:
+    image: swipl
+    container_name: prolog-lab
+    volumes:
+      - ./src:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    command: bash

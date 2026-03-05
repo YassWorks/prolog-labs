@@ -1,0 +1,2 @@
+clear :- shell("clear").
+
