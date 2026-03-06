@@ -99,22 +99,3 @@ mult_S(_, 0, 0).
 mult_S(X, s(Y), Z) :-
     mult_S(X, Y, Z1),
     sum(X, Z1, Z).
-
-% exercise 3-7
-
-eval(plus(X, Y), Z) :-
-    eval(X, Z1),
-    eval(Y, Z2),
-    Z is Z1+Z2.
-eval(minus(X, Y), Z) :-
-    eval(X, Z1),
-    eval(Y, Z2),
-    Z is Z1-Z2.
-eval(times(X, Y), Z) :-
-    eval(X, Z1),
-    eval(Y, Z2),
-    Z is Z1*Z2.
-eval(divide(X, Y), Z) :-
-    eval(X, Z1),
-    eval(Y, Z2),
-    Z is Z1/Z2.
